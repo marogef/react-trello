@@ -1,0 +1,93 @@
+<!doctype HTML>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Thinkful React Starter</title>
+
+<link rel="stylesheet" href="css/index.css">
+
+<!-- Your HTML goes here -->
+<div>
+
+    Your Board component should take: A text prop that contains the content of the card
+
+
+    <!--
+    A title prop that contains the title of the board.
+    A lists prop that contains an array of the titles of the board's lists.
+    Your List component should take:
+-->
+
+    <!--
+A title prop that contains the title of the list.
+A cards prop that contains the contents of the cards.
+Your Card component should take:
+-->
+    <!--    A text prop that contains the content of the card-->
+
+    export default function titles(props) { return (
+    <div className="titles-board">
+        <div className="board-one">{props.name}</div>
+    </div>
+
+</div>
+<div className="titles-list">
+    <div className="list-one">{props.name}</div>
+</div>
+<div className="cards-list">
+    <div className="jack">{props.name}</div>
+</div>
+); } export default function titlesList() { return (
+<div className="person-list">
+    <titles name="Monako" />
+    <div className="titles-list">
+        <titles name="favorites-list" />
+        <div className="card-list">
+            <p>jack</p>
+            />
+        </div>
+        ); }
+
+        <!--
+
+        Add a form containing a text input to the bottom of your Trello Listcomponent.
+
+        When the input's onChange event is fired, it should call an onAddInputChanged callback passed via the List's props.
+
+        Add a submit button to the form next to the text input.
+
+
+-->
+
+        <form>
+            First name:
+            <br>
+            <input type="text" name="firstname">
+            <br>
+
+        </form>
+
+        onAddInputChanged
+
+        <form action="/form">
+            First name:
+            <br>
+            <input type="text" name="firstname" value="Mickey">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        function onChange(props) { return
+        <button onClick={props.onClick}>{props.text}</button>; }
+        <!--
+        for When the form is submitted, it should run event.preventDefault(), then call an onAddSubmit callback passed via the List's props.
+
+        Pass an onAddInputChanged and an onAddSubmit callback to your Listcomponents.
+
+        In the callbacks, print a logging message to the console to make sure your callbacks are working. You'll implement the actual card adding functionality in the next lesson.
+-->
+        $('input').submit(function (event) { event.preventDefault(); onAddSubmit(); function ListProp(props) { const website = 'https://w.palpal.com/player/'; } function Listcomponenet(onAddInputChanged, onAddSubmit) {
+
+        <Button onClick={this.onButtonClick} text='Please make sure your callbacks are working' /> } });
+    </div>
+    <script src="js/index.js"></script>
